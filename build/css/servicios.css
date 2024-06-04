@@ -47,7 +47,7 @@
     align-items: center;
   }
   .cards .flip-card .flip-card__front {
-    background-color: var(--color-complementario);
+    /* background-color: var(--color-complementario); */
     color: var(--color-claro);
   }
   .cards .flip-card .flip-card__back {
