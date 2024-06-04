@@ -31,11 +31,12 @@
     padding: 3rem 0;
     top: 0;
     right: 0;
-    bottom: 2rem;
+    bottom: 0;
     left: 0;
     background-color: #ae2220ce;
     transform: var(--state-menu);
     transition: 0.5s transform;
+    z-index: 1;
   }
 }
 
@@ -98,13 +99,11 @@
 }
 .hero .texto{
   filter: brightness(110%);
+  height: 32rem;
 }
 .hero h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
-}
-.hero .texto {
-  margin-bottom: 10%;
 }
 
 .hero .texto :first-child{
@@ -114,6 +113,6 @@
 }
 @media (max-width: 768px) {
   .hero {
-    height: calc(100vh - 2rem);
+    height: 100vh;
   }
 }
