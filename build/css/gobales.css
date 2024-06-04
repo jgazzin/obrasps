@@ -5,6 +5,7 @@
   --color-texto: #2B2A28;
   --color-claro: snow;
   --color-tranparencia: #ae2220ce;
+  --shadow: 2px 2px 10px #2B2A28;
 }
 
 body {
@@ -82,3 +83,6 @@ body {
     color: var(--color-texto);
   }
 
+.hidden{
+  display: none;
+}

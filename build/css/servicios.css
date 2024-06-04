@@ -47,12 +47,12 @@
     align-items: center;
   }
   .cards .flip-card .flip-card__front {
-    background-color: #bbb;
-    color: white;
+    background-color: var(--color-complementario);
+    color: var(--color-claro);
   }
   .cards .flip-card .flip-card__back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: var(--color-principal);
+    color: var(--color-claro);
     transform: rotateY(180deg);
   }
   

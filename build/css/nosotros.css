@@ -2,12 +2,12 @@
     margin: 3rem 0;
   }
   .nosotros .presentacion {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
     gap: 2rem;
   }
-  .nosotros .presentacion img {
-    max-width: 45%;
-  }
+ 
   .nosotros .presentacion p {
     line-height: 1.5;
   }
@@ -28,22 +28,22 @@
   .nosotros .items .card p {
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    .nosotros .presentacion {
+      grid-template-columns: 1fr;
+    }
+    .nosotros .presentacion .texto h2 {
+      text-align: center;
+    }
+  }
   
   @media (max-width: 576px) {
-      .presentacion {
-        flex-direction: column;
-      }
-      .nosotros .presentacion img {
-        max-width: 100%;
-      }
-      .nosotros .presentacion .texto h2 {
-        text-align: center;
-      }
-      .nosotros .items {
-        flex-direction: column;
-      }
-      .nosotros .items .card{
-        height: auto;
-      }
+    .nosotros .items {
+      flex-direction: column;
+    }
+    .nosotros .items .card{
+      height: auto;
+    }
   }
   

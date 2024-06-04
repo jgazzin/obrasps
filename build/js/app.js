@@ -124,7 +124,7 @@ function enviar() {
     setTimeout(() => {
         form.classList.remove('enviando')
         form.reset()
-        const i = form.querySelectorAll('.fa-regular');
+        const i = form.querySelectorAll('.fa-solid');
         i.forEach(element => {
             element.remove()
         });
@@ -133,4 +133,21 @@ function enviar() {
     }, 1800);
     
     
+}
+
+// FAQS
+const arrows = document.querySelectorAll('.faqs .pregunta .fa-solid')
+
+arrows.forEach(arrow => {
+    arrow.addEventListener('click', mostrar)
+});
+
+function mostrar(e) {
+    const item = e.target.parentElement.parentElement;
+    const respuesta =item.lastElementChild;
+    const icon = item.firstElementChild.lastElementChild;
+
+    respuesta.classList.toggle("hidden");
+    icon.classList.toggle("fa-angle-down")
+    icon.classList.toggle("fa-angle-up")
 }

@@ -13,6 +13,12 @@
 
   }
 
+  @media (max-width: 576px) {
+    .contactForm .medio-container{
+      width: 100%;
+    }
+  }
+
   .contactForm .form {
     height: 100%;
     display: flex;

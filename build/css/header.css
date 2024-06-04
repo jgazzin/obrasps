@@ -6,7 +6,7 @@
 
   --state-close: scale(0);
   --state-ham: scale(1);
-  --state-menu: translate(100%);
+  --state-menu: translate(-100%);
 }
 .nav-bar .navbar:target, .footer .navbar:target {
   --state-close: scale(1);
@@ -31,7 +31,7 @@
     padding: 3rem 0;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 2rem;
     left: 0;
     background-color: #ae2220ce;
     transform: var(--state-menu);
@@ -96,6 +96,9 @@
   min-height: 50rem;
   color: var(--color-complementario);
 }
+.hero .texto{
+  filter: brightness(110%);
+}
 .hero h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -111,6 +114,6 @@
 }
 @media (max-width: 768px) {
   .hero {
-    height: 100vh;
+    height: calc(100vh - 2rem);
   }
 }
