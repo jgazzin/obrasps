@@ -1,0 +1,116 @@
+.nav-bar .navbar, .footer .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  --state-close: scale(0);
+  --state-ham: scale(1);
+  --state-menu: translate(100%);
+}
+.nav-bar .navbar:target, .footer .navbar:target {
+  --state-close: scale(1);
+  --state-ham: scale(0);
+  --state-menu: translate(0);
+}
+
+.nav-bar .nav-brand, .footer .nav-brand {
+  width: 14rem;
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ae2220ce;
+    transform: var(--state-menu);
+    transition: 0.5s transform;
+  }
+}
+
+.nav-item {
+  /* height: 8rem; */
+  padding: 0 2rem;
+  /* display: grid;
+  place-items: center; */
+}
+.nav-item a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-claro);
+}
+.nav-item:hover a {
+  color: var(--color-complementario);
+}
+
+.nav-bar .menu {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-bar .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+  }
+  .nav-bar .menu .nav-ham, .nav-bar .menu .nav-close {
+    text-align: center;
+    transition: 1s transform ease-in-out;
+    color: var(--color-claro);
+  }
+  .nav-bar .menu .nav-ham:hover, .nav-bar .menu .nav-close:hover
+  {
+    color: var(--color-complementario);
+  }
+  .nav-bar .menu .nav-ham {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transform: var(--state-ham);
+  }
+  .nav-bar .menu .nav-close {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transform: var(--state-close);
+  }
+}
+
+.hero {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/hero-st.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 50rem;
+  color: var(--color-complementario);
+}
+.hero h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.hero .texto {
+  margin-bottom: 10%;
+}
+
+.hero .texto :first-child{
+  border-bottom: 1px solid var(--color-complementario);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+}

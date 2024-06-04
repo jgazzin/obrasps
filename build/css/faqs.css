@@ -1,0 +1,23 @@
+.faqs {
+    margin: 2rem 0;
+  }
+  .faqs .items {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+  }
+  .faqs .items .check {
+    background-color: var(--color-destaque);
+    display: grid;
+    place-items: center center;
+    padding: 2rem 1rem;
+    color: var(--color-claro);
+  }
+  
+  @media (max-width: 576px) {
+    .contactForm .medio-container{
+      width: 100%;
+    }
+  }
