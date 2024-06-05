@@ -57,17 +57,17 @@
   }
 
   #flip_1{
-    background-image: url(/build/img/20170313_134743.jpg);
+    background-image: url(../img/20170313_134743.jpg);
     background-size: cover;
     background-position: center;
   }
   #flip_2{
-    background-image: url(/build/img/enseco.jpg);
+    background-image: url(../img/enseco.jpg);
     background-size: cover;
     background-position: center;
   }
   #flip_3{
-    background-image: url(/build/img/IMG_20160917_125722.jpg);
+    background-image: url(../img/IMG_20160917_125722.jpg);
     background-size: cover;
     background-position: center;
   }
