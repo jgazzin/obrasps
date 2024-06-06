@@ -49,6 +49,8 @@
   .cards .flip-card .flip-card__front {
     /* background-color: var(--color-complementario); */
     color: var(--color-claro);
+    display: grid;
+    place-content: center;
   }
   .cards .flip-card .flip-card__back {
     background-color: var(--color-principal);
@@ -77,4 +79,9 @@
       flex-direction: column;
       align-items: center;
     }
+  }
+
+  .tarjetas .btn {
+    background-color: transparent;
+    border: 1px solid var(--color-complementario);
   }

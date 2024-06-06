@@ -9,7 +9,8 @@ let verificado = {
     nombre: '',
     tel: '',
     email: '',
-    terminos: ''
+    terminos: '',
+    asunto: 'consulta'
 }
 
 form.addEventListener('focusout', verificar);
@@ -21,10 +22,10 @@ btn.addEventListener('click', (e) => {
 // funciones
 
 function verificar(e) {
-    let type = e.target.type;
+    let type = e.target.id;
 
     switch (type) {
-        case 'text':
+        case 'name':
             nombre(e.target)
             break;
         case 'tel':
@@ -33,8 +34,13 @@ function verificar(e) {
         case 'email':
             email(e.target)
             break;
-        case 'checkbox':
+        case 'terminos':
             terminos(e.target)
+            break;
+        case 'asunto':
+            if(e.target.value!= '') {
+                verificado.asunto = e.target.value;
+            }
             break;
     
         default:
@@ -114,12 +120,14 @@ function eliminarAlert(e) {
 
 function enviar() {
     form.classList.add('enviando')
+    console.log(verificado);
 
     verificado = {
         nombre: '',
         tel: '',
         email: '',
-        terminos: ''
+        terminos: '',
+        asunto: 'consulta'
     }
     setTimeout(() => {
         form.classList.remove('enviando')
@@ -134,6 +142,21 @@ function enviar() {
     
     
 }
+
+// desde servicios
+const servicios = document.querySelectorAll('.flip-card__back .btn');
+servicios.forEach(btn => {
+    btn.addEventListener('click', (e)=> {
+        console.log(e.target);
+        const asunto = e.target.parentElement.parentElement.firstElementChild.firstElementChild.textContent;
+        verificado.asunto = asunto;
+        const inputAsunto = document.querySelector('#asunto');
+        inputAsunto.value = asunto.toUpperCase();
+    })
+    
+});
+
+
 
 // FAQS
 const arrows = document.querySelectorAll('.faqs .pregunta .fa-solid')
