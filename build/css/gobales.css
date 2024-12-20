@@ -20,7 +20,7 @@ body {
   
   .container {
     width: 80%;
-    max-width: 80rem;
+    max-width: 100rem;
     margin: 0 auto;
   }
   @media (max-width: 768px) {

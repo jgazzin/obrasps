@@ -1,7 +1,7 @@
 .btn {
     padding: 8px 24px;
     display: inline-block;
-    min-width: 16rem;
+    min-width: 18rem;
     background-color: var(--color-principal);
     border-radius: 1.6rem;
     border: none;
