@@ -1,13 +1,12 @@
 .faqs {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     align-items: start;
     gap: 2rem;
     padding-bottom: 5rem;
     padding-top: 2rem;
   }
-  .faqs .preguntas-contenedor{
-    width: 70%;
-  }
+
 .faqs .item{
   border-bottom: 2px solid var(--color-texto);
   padding-bottom: 1rem;
@@ -17,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .pregunta .fa-solid {
@@ -37,13 +37,14 @@
 .faqs .respuesta{
   border: 1px var(--color-complementario) solid;
   border-radius: 1rem;
-  padding: 4px 8px;
+  padding: 8px 16px;
+  line-height: 1.3;
 }
+
   
 @media (max-width: 768px) {
     .faqs{
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: 1fr;
     }
     .faqs .preguntas-contenedor{
       width: 100%;

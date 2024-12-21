@@ -56,6 +56,12 @@
     background-color: var(--color-principal);
     color: var(--color-claro);
     transform: rotateY(180deg);
+
+  }
+  .cards .flip-card .flip-card__back p {
+    line-height: 1.5;
+    font-size: 2rem;
+    padding: 2rem;
   }
 
   #flip_1{
@@ -64,14 +70,25 @@
     background-position: center;
   }
   #flip_2{
-    background-image: url(../img/enseco.jpg);
+    background-image: url(../img/6_20240504_161812_0005.png);
     background-size: cover;
     background-position: center;
   }
   #flip_3{
-    background-image: url(../img/IMG_20160917_125722.jpg);
+    background-image: url(../img/IMG-20180425-WA0004.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: -220px;
+  }
+
+  #flip_1 + div {
+    background-color: var(--color-principal);
+  }
+  #flip_2 + div {
+    background-color: var(--color-destaque);
+  }
+  #flip_3 + div {
+    background-color: var(--color-texto);
+    color: var(--color-claro);
   }
   
   @media (max-width: 576px) {
