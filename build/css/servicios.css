@@ -78,7 +78,7 @@
   #flip_3{
     background-image: url(../img/IMG-20180425-WA0004.jpg);
     background-size: cover;
-    background-position: -220px;
+    background-position: center;
   }
 
   #flip_1 + div {

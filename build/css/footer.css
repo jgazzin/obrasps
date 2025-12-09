@@ -32,12 +32,16 @@
 }
 .footer .social {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
-  justify-content: right;
   padding: 2rem;
+  color: var(--color-claro);
 }
 
 .footer .social i{
+  transform: scale(2);
   color: var(--color-claro);
 }
 .footer .social i:hover{
