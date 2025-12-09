@@ -48,5 +48,6 @@
     }
     .faqs .preguntas-contenedor{
       width: 100%;
+      padding: 0 1rem;
     }
 }
