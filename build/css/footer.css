@@ -49,9 +49,6 @@
 }
 
 @media (max-width: 768px) {
-  .footer .social {
-    justify-content: center;
-  }
 
   .footer .navbar {
     flex-direction: column;

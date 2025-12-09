@@ -1,0 +1,46 @@
+#galeria {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+#galeria .galeria-imagenes {
+    width: 100%;
+}
+
+#galeria .categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#galeria .categorias p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#galeria .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#galeria .dots i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.dot_active {
+    background-color: black;
+}
