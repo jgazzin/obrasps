@@ -64,7 +64,7 @@ body {
     text-transform: uppercase;
   }
   
-  p {
+  p, li {
     font-size: 1.8rem;
   }
   
