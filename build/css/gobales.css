@@ -63,7 +63,7 @@ body {
     text-transform: uppercase;
   }
   
-  p, li {
+  p, li, i {
     font-size: 1.8rem;
   }
   

@@ -1,6 +1,10 @@
 #galeria {
+    height: auto;
     width: 100%;
     margin-bottom: 6rem;
+}
+.galeria {
+    height: 400px;
 }
 
 #galeria .galeria-imagenes {
@@ -38,9 +42,17 @@
     height: 12px;
     border-radius: 50%;
     background-color: gray;
-    cursor: pointer;
 }
 
 .dot_active {
     background-color: black;
+}
+
+.cat_active {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.textos_obras {
+    height: 120px;
 }
