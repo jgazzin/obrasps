@@ -446,7 +446,7 @@ items.forEach(item => {
     const icons = item.querySelectorAll('.fa-solid');
 
     icons.forEach(icon => {
-        icon.addEventListener('mouseover', (e) => {
+        icon.addEventListener('click', (e) => {
             toggleItem(item, icon);
         });
 

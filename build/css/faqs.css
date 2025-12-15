@@ -28,6 +28,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
+  
 }
 .pregunta .fa-solid:hover{
   box-shadow: var(--shadow);
